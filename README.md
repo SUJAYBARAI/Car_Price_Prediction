@@ -70,6 +70,11 @@ screenshot or GIF here_
 
 ![Car Price Prediction Demo](Car_Price_Prediction.png)
 
+
+## 🌍 Live Demo
+You can try the app here: [Car Price Prediction App](https://carpriceprediction-t32eeouu4jwftqgvy8w7bp.streamlit.app/)
+
+
 ---
 
 ## 📜 License
