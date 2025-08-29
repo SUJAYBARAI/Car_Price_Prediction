@@ -1,4 +1,4 @@
-# 🚗 Car Price Prediction App
+# 🚗 Car Price Prediction Web App
 
 This project is a **Machine Learning Web App** that predicts the **selling price of cars**.  
 The app is built using **Streamlit** and trained on the **CarDekho dataset**.  
