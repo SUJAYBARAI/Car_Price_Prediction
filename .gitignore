@@ -1,0 +1,30 @@
+# Python cache / compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# macOS hidden files
+.DS_Store
+
+# Virtual environment folders
+.env
+.venv/
+venv/
+ENV/
+
+# Model files (optional, if you don’t always want to upload them)
+*.pkl
+
+# Log files
+*.log
+
+# Streamlit cache
+.streamlit/
+
+# IDE specific files
+.vscode/
+.idea/
