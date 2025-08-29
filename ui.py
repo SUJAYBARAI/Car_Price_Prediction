@@ -1,11 +1,19 @@
 import streamlit as st
 import pickle
 import numpy as np
+import os
 
 # ---------------------------
 # Load Trained Model
 # ---------------------------
-model = pickle.load(open("model.pkl", "rb"))  # apna model file ka naam
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = os.path.join(BASE_DIR, "model.pkl")
+
+with open(MODEL_PATH, "rb") as fs:   # apna model file ka naam
+    model = pickle.load(fs)
+
+# model = pickle.load(open("model.pkl", "rb"))  
 
 st.title("🚗 Car Price Prediction App")
 st.write("With this app, you can predict the selling price of your car.")
@@ -44,3 +52,4 @@ if st.button("Predict Selling Price"):
     st.subheader("💰 Predicted Selling Price:")
 
     st.success(f"₹ {round(prediction[0], 2)} lakhs")
+
