@@ -8,7 +8,7 @@ import numpy as np
 model = pickle.load(open("model.pkl", "rb"))  # apna model file ka naam
 
 st.title("🚗 Car Price Prediction App")
-st.write("Is app se aap apni gaadi ki *selling price* predict kar sakte ho.")
+st.write("With this app, you can predict the selling price of your car.")
 
 # ---------------------------
 # User Inputs
@@ -42,4 +42,5 @@ features = np.array([[year, present_price, kms_driven, fuel_val, seller_val, tra
 if st.button("Predict Selling Price"):
     prediction = model.predict(features)
     st.subheader("💰 Predicted Selling Price:")
+
     st.success(f"₹ {round(prediction[0], 2)} lakhs")
